@@ -1,7 +1,7 @@
 # aws-apigateway-lambda-dynamodb
 
 POST Example
-<pre><code>
+```js
 console.log('Loading function');
 
 const doc = require('dynamodb-doc');
@@ -34,10 +34,10 @@ exports.handler = (event, context, callback) => {
             done(new Error(`Unsupported method "${event.httpMethod}"`));
     }
 };
-</code></pre>
+```
 
 GET Example
-<pre><code>
+```js
 console.log('Loading function');
 
 const doc = require('dynamodb-doc');
@@ -92,4 +92,4 @@ exports.handler = (event, context, callback) => {
     }
 };
 
-</code></pre>
+```
